@@ -1,4 +1,4 @@
-appVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: devops-project
@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/Acoolwolf96/devops-project.git'
+    repoURL: "https://github.com/Acoolwolf96/devops-project.git"
     targetRevision: HEAD
     path: devops-project-app
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
     namespace: default
   syncPolicy:
     automated:
