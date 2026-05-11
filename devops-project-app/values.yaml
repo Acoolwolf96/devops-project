@@ -1,6 +1,6 @@
 image:
   repository: acoolwolf/devops-project
-  tag: f2b1102
+  tag: 71c3634
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
